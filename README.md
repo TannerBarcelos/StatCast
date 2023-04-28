@@ -1,5 +1,8 @@
 # StatCast
 
+> Note that this application is under development. This README is proposing a lot more than what is currently completed.
+> A checklist of tasks will be added here soon to outline work being done
+
 #### About the Project
 
 Sports statistics are often hard to get a hand on. You can get them on official league websites but they are often limited and hard to grasp. Likewise, you can use 3rd party services but they are often outdated and also bloated with ads and unecessary data.
