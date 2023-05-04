@@ -13,14 +13,16 @@ These experiences are powered by an advanced web scraping data ingestion pipelin
 
 #### Application Tech Stack
 
-| Technology | Purpose                                            |
-| ---------- | -------------------------------------------------- |
-| NextJS     | Web Client                                         |
-| NodeJS     | REST APIs                                          |
-| MongoDB    | Managing users and application related data        |
-| Python     | Web Scrapers (scheduled by Airflow)                |
-| Spark      | ETL jobs written with Scala (scheduled by Airflow) |
-| MySQL      | Final Persistence Layer                            |
+| Technology | Purpose                                                                   |
+| ---------- | ------------------------------------------------------------------------- |
+| NextJS     | **Typescript** Web Client                                                 |
+| FastAPI    | **Python** Backend Web Service                                            |
+| MongoDB    | Managing users and web application related data                           |
+| PostgreSQL | Final Persistence Layer after ETL completes                               |
+| Python     | Web Scrapers (Daily Stats and Historical Stats)                           |
+| Spark      | ETL jobs written with **Scala**                                           |
+| Airflow    | Job Scheduler                                                             |
+| GCS        | Store raw CSV files from scraper jobs. Data serves as source for ETL jobs |
 
 #### Application E2E Flow
 
