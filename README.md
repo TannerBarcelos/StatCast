@@ -1,6 +1,6 @@
 # StatCast
 
-> Note that this application is under development. This README is proposing a lot more than what is currently completed.
+> Note that this application is under development and planning. This README is proposing a lot more than what is currently complete and is more of an outline.
 > A checklist of tasks will be added here soon to outline work being done
 
 #### About the Project
@@ -15,10 +15,10 @@ These experiences are powered by an advanced web scraping data ingestion pipelin
 
 | Technology | Purpose                                                                   |
 | ---------- | ------------------------------------------------------------------------- |
-| NextJS     | **Typescript** Web Client                                                 |
-| FastAPI    | **Python** Backend Web Service                                            |
+| React     | **Typescript** Web UI for Data Visualization using D3                                                 |
+| FastAPI    | **Python** Backend Web Services                                           |
 | MongoDB    | Managing users and web application related data                           |
-| PostgreSQL | Final Persistence Layer after ETL completes                               |
+| PostgreSQL | Final Persistence Layer for scraped data                               |
 | Python     | Web Scrapers (Daily Stats and Historical Stats)                           |
 | Spark      | ETL jobs written with **Scala**                                           |
 | Airflow    | Job Scheduler                                                             |
