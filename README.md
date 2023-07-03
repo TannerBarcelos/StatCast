@@ -1,8 +1,5 @@
 # statr
 
-> Note that this application is under development and planning. This README is proposing a lot more than what is currently complete and is more of an outline.
-> A checklist of tasks will be added here soon to outline work being done
-
 #### About the Project
 
 Sports statistics are often hard to get a hand on. You can get them on official league websites but they are often limited and hard to grasp. Likewise, you can use 3rd party services but they are often outdated and also bloated with ads and unecessary data.
@@ -13,17 +10,31 @@ These experiences are powered by an advanced web scraping data ingestion pipelin
 
 #### Application Tech Stack
 
-| Technology | Purpose                                                                   |
-| ---------- | ------------------------------------------------------------------------- |
-| React     | **Typescript** Web UI for Data Visualization using D3                                                 |
-| FastAPI    | **Python** Backend Web Services                                           |
-| MongoDB    | Managing users and web application related data                           |
-| PostgreSQL | Final Persistence Layer for scraped data                               |
-| Python     | Web Scrapers (Daily Stats and Historical Stats)                           |
-| Spark      | ETL jobs written with **Scala**                                           |
-| Airflow    | Job Scheduler                                                             |
-| GCS        | Store raw CSV files from scraper jobs. Data serves as source for ETL jobs |
+| Technology | Purpose                                                                                                                                   |
+| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| React      | **Typescript** Web UI for Data Visualization using D3 and ChartJS                                                                         |
+| FastAPI    | **Python** REST API                                                                                                                       |
+| Python     | Web Scraper Jobs (Daily Statistics and Historical Statistics _1 time run_)                                                                |
+| Spark      | ETL jobs written with **Scala** to process S3 files and send off to Postgres to be the REST API data source                               |
+| MongoDB    | User and application data management                                                                                                      |
+| Airflow    | Job Scheduler for web scrapers and ETL jobs                                                                                               |
+| Docker     | Containerization of application and services                                                                                              |
+| AWS ECS    | Container orchestration for application and services                                                                                      |
+| AWS S3     | Staging datalake for the raw CSV files from scraper jobs. Data serves as source for ETL jobs that will enrich, clean and process the data |
+| AWS RDS    | Postgres RDBMS for storing processed data from ETL jobs and serving as REST API data source                                               |
 
-#### Application E2E Flow
+> Kubernetes is also being considered as an alternative to AWS ECS but is not currently being used as this project is still in the early stages of development and not expected to scale to a point where Kubernetes is necessary.
 
 #### Architecture
+
+> This is a detailed Architecture diagram of the proposed application. This is not a current representation of the application as it is still in development.
+
+[wip]
+
+#### Getting Started
+
+#### Status
+
+---
+
+> This application is under **planning phase** and therefore is more of a proposal.
