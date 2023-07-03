@@ -1,12 +1,20 @@
-# statr
-
-#### About the Project
+# Statr
 
 Sports statistics are often hard to get a hand on. You can get them on official league websites but they are often limited and hard to grasp. Likewise, you can use 3rd party services but they are often outdated and also bloated with ads and unecessary data.
 
-statr aims to solve these issues by providing an end-to-end, simple to use web interface for getting the data you want easily. The platform aims to provide immersive data visualizations and experiences that are accessible and usable.
+Statr aims to solve these issues by providing an end-to-end, simple to use web interface for getting the data you want easily. The platform aims to provide immersive data visualizations and experiences that are accessible and usable.
 
 These experiences are powered by an advanced web scraping data ingestion pipeline to power the underlying applications data layer that the applications backend uses to provide the UI with up-to-date sports data as well as historical analytics.
+
+<br />
+
+#### High Level Architecture
+
+![Architecture Diagram](./docs/architecture/architecture_img.png)
+
+> The architecture diagram is a high level overview of the application and its services. It is not a complete representation of the application and its services. To see a more detailed architecture diagram, please see the docs folder.
+
+<br />
 
 #### Application Tech Stack
 
@@ -25,16 +33,10 @@ These experiences are powered by an advanced web scraping data ingestion pipelin
 
 > Kubernetes is also being considered as an alternative to AWS ECS but is not currently being used as this project is still in the early stages of development and not expected to scale to a point where Kubernetes is necessary.
 
-#### Architecture
+<!-- #### Getting Started -->
 
-> This is a detailed Architecture diagram of the proposed application. This is not a current representation of the application as it is still in development.
-
-[wip]
-
-#### Getting Started
+<br />
 
 #### Status
 
----
-
-> This application is under **planning phase** and therefore is more of a proposal.
+This application is under **planning phase** and therefore is more of a proposal.
