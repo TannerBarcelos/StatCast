@@ -15,7 +15,7 @@ These experiences are powered by an advanced web scraping data ingestion pipelin
 | React      | **Typescript** Web UI for Data Visualization using D3 and ChartJS                                                                         |
 | FastAPI    | **Python** REST API                                                                                                                       |
 | Python     | Web Scraper Jobs (Daily Statistics and Historical Statistics _1 time run_)                                                                |
-| Spark      | ETL jobs written with **Scala** to process S3 files and send off to Postgres to be the REST API data source                               |
+| Spark      | **PySpark** ETL pipeline to process S3 files and send off to Postgres to be the REST API data source                                      |
 | MongoDB    | User and application data management                                                                                                      |
 | Airflow    | Job Scheduler for web scrapers and ETL jobs                                                                                               |
 | Docker     | Containerization of application and services                                                                                              |
